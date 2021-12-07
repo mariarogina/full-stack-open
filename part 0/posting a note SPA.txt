@@ -1,0 +1,16 @@
+Posting note
+
+User->Webpage. User enters note text into the input field from where onChange event handler transmits the result of input field to the spa's script
+
+User->Webpage. User presses the button to submit the form. onSubmit handler triggers a POST request
+
+Webpage->Server. Webpages sends POST request to the server, endpoint:"/new_note_spa", with the ready note object stringified to JSON format as a payload.
+
+ {
+    content: 'Browser can execute only Javascript',
+    date: new Date('2019-05-23T18:39:34.091Z'),
+  }
+
+Server stores the new note to the list of notes
+
+Server answers with a success status 201 and sends no further requests.

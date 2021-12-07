@@ -1,0 +1,15 @@
+browser->server: HTTP GET "/spa" endpoint
+server-->browser: HTML-code
+browser->server: HTTP GET main.css
+server-->browser: main.css
+browser->server: HTTP GET spa.js
+server-->browser: main.js
+
+In the browser:
+browser starts executing spa's js-code that requests JSON data from server 
+
+browser->server: HTTP GET "/data.json"
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+In the browser:
+browser renders the list of notes

@@ -1,0 +1,21 @@
+Posting note
+
+User->Webpage. User enters letters into the input field 
+Input event listener calls the handler that trasmits the input
+
+User->Webpage. User presses the button to submit the form
+Form has attributes of action and method
+The event handler of 'submit' type happens on clicking button
+
+Webpage->Server. Clicking button on the webpages triggers sending a POST request to the server, endpoint:"/new_note". 
+Input text and new Date are sent as a request body.
+The server creates a new note object and stores the new note to the list of notes
+
+After saving the note, server redirects us to the endpoint:"/notes" to receive the bulk of notes data in json format
+Browser->Webpage. Server sends the new list of note object to the webpage over the browser
+
+Browser->Webpage. Browser asks the webpage to provide the HTML representation of the new notes list.
+Webpage->Browser: serves an HTML file
+
+Browser->Webpage. Browser asks the webpage to provide the CSS representation of the new notes list.
+Webpage->Browser: serves a CSS file
