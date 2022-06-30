@@ -61,7 +61,7 @@ const App = () => {
           btn btn-primary"
           onClick={() => setShowAll(!showAll)}
         >
-          Show {showAll ? "important" : "all"}
+          show {showAll ? "important" : "all"}
         </button>
       </div>
       <ul>
