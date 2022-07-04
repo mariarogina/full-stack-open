@@ -14,7 +14,6 @@
     "logs:prod": "heroku logs --tail",
     "lint": "eslint ."
   },
-  "proxy": "http://localhost:3005",
   "author": "Mariia Rogina",
   "license": "ISC",
   "dependencies": {
